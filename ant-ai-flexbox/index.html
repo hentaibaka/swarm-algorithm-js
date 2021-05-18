@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+<head>
+    <style>img[alt="www.000webhost.com"] {display: none;}</style>
+    <meta charset="UTF-8">
+    <title>ant ai</title>
+    <link rel="stylesheet" href="ant_ai_styles.css">
+</head>
+<body class="body">
+    <div class='container-1'>
+        <div class='canvas-container'>
+            <canvas class='game' id = 'gamec'>
+            </canvas>
+        </div>
+        <div class='buttons-container'>
+            <div font-size='15px' text-align='left' id='antstext'>Ants</div>
+            <div class='antsldr-container'>
+                <input type="range" min="50" max="2500" value="1500" class="slider" id="myRangeA">
+            </div>
+            <div font-size='15px' text-align='left' id='radiustext'>Radius</div>
+            <div class='raiussldr-container'>
+                <input type="range" min="15" max="100" value="40" class="slider" id="myRangeR">
+            </div>
+            <div class='foodbtn-container'>
+                <input type="button" value="Food" id = 'foodbtn' class="foodbtn">
+            </div>
+            <div class='homebtn-container'>
+                <input type="button" value="Home"id ='homebtn' class = 'homebtn'>
+            </div>
+            <div class='borderbtn-container'>
+                <input type="button" value="Border"id ='borderbtn' class = 'borderbtn'>
+            </div>
+            <div class='pausebtn-container'>
+                <input type="button" value="Start" id='pausebtn' class='pausebtn'>
+            </div>
+            <div id='counter' class="counter">count: 0
+                time: 0 min
+                fps: 0</div>
+        </div>
+    </div>
+    <script src = 'ant_script_build.js'></script>
+</body>
